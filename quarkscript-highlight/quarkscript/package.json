@@ -1,0 +1,25 @@
+{
+  "name": "quarkscript",
+  "displayName": "quarkscript-highlight",
+  "description": "My language QuarkScript support highlighting",
+  "version": "0.0.5",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "quarkscript",
+      "aliases": ["QuarkScript", "quarkscript"],
+      "extensions": [".qs"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "quarkscript",
+      "scopeName": "source.quarkscript",
+      "path": "./syntaxes/quarkscript.tmLanguage.json"
+    }]
+  }
+}
